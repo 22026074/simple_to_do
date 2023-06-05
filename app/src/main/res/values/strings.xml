@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Simple To Do</string>
+    <string name="etEnterTask">ENTER NEW TASKS</string>
+    <string name="btnAdd">ADD</string>
+    <string name="btnClear">CLEAR</string>
+    <string name="tvCurrentTasks">CURRENT TASKS:</string>
+    <string name="tvTitle">TO DO LIST</string>
+    <string-array name="spinnerItems">
+        <item>ADD NEW TASKS</item>
+        <item>REMOVE TASKS</item>
+    </string-array>
+</resources>

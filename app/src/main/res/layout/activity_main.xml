@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textViewTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/simple_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewToDoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_bold_italic"
+        android:text="@string/tvTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#A6826D" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:entries="@array/spinnerItems" />
+
+    <EditText
+        android:id="@+id/editTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_italic"
+        android:hint="@string/etEnterTask"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E6B990"
+            android:fontFamily="@font/montserrat_bold_italic"
+            android:text="@string/btnAdd" />
+
+        <Button
+            android:id="@+id/btnRemoveItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E6B990"
+            android:fontFamily="@font/montserrat_bold_italic"
+            android:text="REMOVE" />
+
+        <Button
+            android:id="@+id/btnClearItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A6826B"
+            android:fontFamily="@font/montserrat_bold_italic"
+            android:text="@string/btnClear"
+            android:textColorLink="#F82727" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium_italic"
+        android:text="@string/tvCurrentTasks"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#684836" />
+
+    <ListView
+        android:id="@+id/listViewTask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#79FFFFFF" />
+</LinearLayout>
